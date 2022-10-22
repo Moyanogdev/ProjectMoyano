@@ -1,0 +1,164 @@
+/* GENERAL STYLES*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Space mono;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: black;
+    color: white;
+}
+
+/* HEADER STYLES */
+
+.header{
+    padding: 10px 10%;
+}
+
+.logoHeader{
+    width: 130px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* SECTION HOME */
+
+#sectionHome{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#sectionHome img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sectionHome img#planetStars{
+    mix-blend-mode: screen;
+    position: absolute;
+}
+
+/* SECTION ABOUT */
+
+#sectionAbout{
+    padding: 80px 0;
+    color: whitesmoke;
+}
+
+.containerAbout{
+    padding: 10px 10%;
+}
+
+.columnAbout{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.colAbout1{
+    flex-basis: 60%;
+}
+
+.colAbout1 p{
+    color: rgb(218, 218, 218);
+}
+
+.tittleAbout{
+    font-size: 60px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+.colAbout2{
+    flex-basis: 35%;
+}
+
+.logoAbout{
+    width: 100%;
+    border-radius: 35px;
+}
+
+.contentTittle{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.contentTittle p{
+    color: white;
+}
+
+.contentTittle p::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(212, 191, 70);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.contentTittle p:hover::after{
+    width: 100%;
+}
+/*
+.contentTittle p.active-link::after{
+    width: 100%;
+}
+*/
+.contentLinks{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}

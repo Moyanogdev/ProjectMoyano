@@ -1,3 +1,4 @@
+// HOME EFECTS
 
 let planet_stars = document.getElementById('planetStars');
 let human = document.getElementById('human');
@@ -11,3 +12,6 @@ window.addEventListener('scroll', function(){
     header.style.top = value * 0.8 + 'px';
 
 })
+
+// ABOUT SECTION EFECTS
+
