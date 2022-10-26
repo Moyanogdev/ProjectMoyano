@@ -166,10 +166,13 @@ nav ul li a:hover::after{
 .contContents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 13px;
 }
 
 .contContents ul li span{
     color: rgb(212, 191, 70);
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .contContents{
@@ -178,4 +181,52 @@ nav ul li a:hover::after{
 
 .contContents.active-cont{
     display: block;
+}
+
+/* SERVICES SECTION */
+
+#sectionServices{
+    background-color: whitesmoke;
+    padding: 40px 0;
+}
+
+.containerServices{
+    text-align: center;
+}
+
+.tittleServices{
+    font-size: 60px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.contServices{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 35px;
+    color: black;
+}
+
+.link-arrow{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-arrow i{
+    transition: .4s ease-in-out;
+    margin-left: 5px;
+}
+
+.link-arrow:hover{
+    color:rgb(165, 52, 52);
+}
+
+.link-arrow:hover i{
+    transform: translate(5px, -5px );
 }

@@ -16,14 +16,15 @@ window.addEventListener('scroll', function(){
 // ABOUT SECTION EFECTS
 
 let contentLinks = document.getElementsByClassName("contentLinks");
-let contContent = document.getElementsByClassName("contContents");
+let contContents = document.getElementsByClassName("contContents");
 
 function openCont(contname){
-    for(contentLinks of contentLinks){
-        contentLinks.classList.remove("active-link");
+    for(contentLink of contentLinks){
+        contentLink.classList.remove("active-link");
     }
-    for(contContents of contContents){
-        contContents.classList.remove("active-cont");
+    for(contContent of contContents){
+        contContent.classList.remove("active-cont");
     }
     event.currentTarget.classList.add("active-link");
+    document.getElementById(contname).classList.add("active-cont");
 }
