@@ -13,6 +13,18 @@ window.addEventListener('scroll', function(){
 
 })
 
+// USER SECTION EFECTS
+
+let userContent = document.getElementById("userContent");
+
+function openContent(){
+    userContent.classList.remove("hideInfo");
+}
+
+function closeContent(){
+    userContent.classList.add("hideInfo");
+}
+
 // ABOUT SECTION EFECTS
 
 let contentLinks = document.getElementsByClassName("contentLinks");

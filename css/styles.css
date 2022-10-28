@@ -86,10 +86,153 @@ nav ul li a:hover::after{
     position: absolute;
 }
 
+
+/* SECTION USER */
+
+.user{
+    width: fit-content;
+    margin: 50px auto;
+    display: flex;
+    flex-basis: 80%;
+}
+
+.userContent{
+    width: fit-content;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 500px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(33, 33, 33);
+    border-width: 1px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+    box-shadow: 8px 8px 8px rgb(33, 33, 33);
+    transition: transform 1s, box-shadow 1s;
+}
+
+.userInfo{
+    padding: 10px 50px;
+    transform: translateX(0px);
+    opacity: 1;
+    transition: transform 1s, opacity 1s;
+}
+
+.userInfo h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.userInfo p{
+    line-height: 26px;
+}
+
+.btnUser a{
+    width: 180px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 12px;
+    color: white;
+    border-style: solid;
+    border-width: .2px;
+    border-color:white;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    margin-top: 30px;
+}
+
+.btnUser a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btnUser a:hover span{
+    width: 100%;
+}
+
+.btnUser a:hover{
+    color: black;
+}
+
+.userInfo span{
+    font-weight: 600;
+    color: rgb(212, 191, 70);
+    cursor: pointer;
+}
+
+.iconUser{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.iconUser i{
+    margin-inline: 8px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.iconUser i:hover{
+    color: rgb(212, 191, 70);
+}
+
+.iconClose{
+    width: 80px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 1s;
+}
+
+.iconClose::before, .iconClose::after{
+    content: '';
+    height: 5%;
+    width: 10px;
+    background-color: rgb(212, 191, 70);
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin-left: -1px;
+}
+
+.iconClose::before{
+    transform: rotate(50deg);
+}
+
+.iconClose::after{
+    transform: rotate(-45deg);
+}
+
+.hideInfo .userInfo{
+    transform: translateX(45px);
+    opacity: 0;
+}
+
+.hideInfo .iconClose{
+    transform: translateX(-410px);
+    opacity: 0;
+}
+
+.hideInfo img{
+    transform: translateX(410px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
 /* SECTION ABOUT */
 
 #sectionAbout{
-    padding: 80px 0;
+    padding: 100px 0;
     color: whitesmoke;
 }
 
@@ -115,11 +258,16 @@ nav ul li a:hover::after{
 .tittleAbout{
     font-size: 60px;
     color: whitesmoke;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .colAbout2{
-    flex-basis: 35%;
+    flex-basis: 20%;
+}
+
+.colAbout2 img{
+    width: 100%;
 }
 
 .logoAbout{
@@ -186,36 +334,57 @@ nav ul li a:hover::after{
 /* SERVICES SECTION */
 
 #sectionServices{
-    background-color: whitesmoke;
-    padding: 40px 0;
+    padding: 75px 0;
+    width: 100%;
 }
 
 .containerServices{
-    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
 }
 
 .tittleServices{
-    font-size: 60px;
-    color: black;
-    margin-bottom: 30px;
+    font-size: 45px;
+    margin-bottom: 65px;
+    text-align: center;
 }
 
 .contServices{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    flex-basis: 32%;
+    margin-bottom: 20px;
     margin-top: 35px;
-    color: black;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(16, 16, 16);
+    padding: 25px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.contServices h2{
+    margin-bottom: 20px;
+}
+
+.contServices:hover{
+    background-color:rgb(29, 29, 29);
+    transform: translateY(-10px);
+}
+
+.iconServices{
+    font-size: 25px;
+    color: rgb(212, 191, 70);
 }
 
 .link-arrow{
-    margin-top: 15px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
     font-weight: 600;
     text-decoration: none;
+    color: white;
 }
 
 .link-arrow i{
@@ -224,7 +393,7 @@ nav ul li a:hover::after{
 }
 
 .link-arrow:hover{
-    color:rgb(165, 52, 52);
+    color: rgb(212, 191, 70);
 }
 
 .link-arrow:hover i{
