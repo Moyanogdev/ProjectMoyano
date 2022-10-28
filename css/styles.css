@@ -438,6 +438,89 @@ nav ul li a:hover::after{
     transform: translate(5px, -5px );
 }
 
+/* WORKS SECTION STYLES */
+
+#sectionWorks{
+    padding: 75px 0;
+    width: 100%;
+}
+
+#sectionWorks h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.containerWorks{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 55px;
+}
+
+.contWorks{
+    flex-basis: 25%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contWorks img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.contWorks:hover img{
+    transform: scale(1.1);
+}
+
+.imgInfo{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.8), rgb(16, 16, 16));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: 0.7s;
+}
+
+.imgInfo h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.imgInfo a{
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    transition: .7s ease-in-out;
+}
+
+.imgInfo:hover a{
+    color: rgb(212, 191, 70);
+    transform: scale(1.1);
+}
+
+.contWorks:hover .imgInfo{
+    height: 100%;
+}
+
 /* CONTACT STYLES */
 
 #sectionContact{
