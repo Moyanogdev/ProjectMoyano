@@ -60,6 +60,51 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+nav .fa-solid{
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    top: 25px;
+    left: 30px;
+}
+
+@media only screen and (max-width: 770px){
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        right: -180px;
+        width: 180px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul li a{
+        color: white;
+        font-weight: 600;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+}
+
 /* SECTION HOME */
 
 #sectionHome{
@@ -114,6 +159,10 @@ nav ul li a:hover::after{
     z-index: 100;
     box-shadow: 8px 8px 8px rgb(33, 33, 33);
     transition: transform 1s, box-shadow 1s;
+}
+
+.user img:hover{
+    opacity: 0.8;
 }
 
 .userInfo{
@@ -227,6 +276,22 @@ nav ul li a:hover::after{
 .hideInfo img{
     transform: translateX(410px);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 770px){
+    .user{
+        flex-basis: 100%;
+    }
+
+    .userContent{
+        flex-basis: 80%;
+        text-align: center;
+        object-fit: fill;
+    }
+
+    .user img{
+        width: 100%;
+    }
 }
 
 /* SECTION ABOUT */
@@ -369,6 +434,43 @@ nav ul li a:hover::after{
 .btnCv a:hover{
     color: black;
 }
+
+@media screen and (max-width: 770px){
+    .columnAbout{
+        justify-content: center;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .columnAbout p{
+        font-size: 14px;
+    }
+
+    .tittleAbout{
+        font-size: 45px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .contTittle{
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .btnCv{
+        margin-bottom: 55px;
+    }
+    .colAbout1{
+        flex-basis: 100%;
+        font-size: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .colAbout2{
+        flex-basis: 80%;
+        text-align: center;
+    }
+}
 /* SERVICES SECTION */
 
 #sectionServices{
@@ -436,6 +538,13 @@ nav ul li a:hover::after{
 
 .link-arrow:hover i{
     transform: translate(5px, -5px );
+}
+
+@media screen and (max-width: 770px){
+    .contServices{
+        flex-basis: 100%;
+        font-size: 16px;
+    }
 }
 
 /* WORKS SECTION STYLES */
@@ -519,6 +628,23 @@ nav ul li a:hover::after{
 
 .contWorks:hover .imgInfo{
     height: 100%;
+}
+
+@media screen and (max-width: 770px){
+    #sectionWorks h1{
+        margin-bottom: 70px;
+    }
+    .containerWorks{
+        padding-top: 0;
+    }
+    .contWorks{
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+
+    .imgInfo{
+        font-size: 16px;
+    }
 }
 
 /* CONTACT STYLES */
@@ -628,6 +754,18 @@ form input:focus, form textarea:focus{
 
 .btnForm a:hover{
     color: black;
+}
+
+@media screen and (max-width: 770px){
+    .contactInfo{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .contactForm{
+        flex-basis: 100%;
+    }
 }
 
 /* FOOTER STYLES */

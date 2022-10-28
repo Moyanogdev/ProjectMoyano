@@ -2,16 +2,26 @@
 
 let planet_stars = document.getElementById('planetStars');
 let human = document.getElementById('human');
-let header = document.querySelector('header');
 
 
 window.addEventListener('scroll', function(){
     let value = window.scrollY;
     planet_stars.style.top = value * 1.05 + 'px';
     human.style.top = value * 0 + 'px';
-    header.style.top = value * 0.8 + 'px';
 
 })
+
+// NAVIGATION BAR EFECTS | RESPONSIVE
+
+let sideMenu = document.getElementById("sideMenu");
+
+function openmenu(){
+    sideMenu.style.right = "0";
+}
+
+function closemenu(){
+    sideMenu.style.right = "-180px";
+}
 
 // USER SECTION EFECTS
 
