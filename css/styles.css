@@ -331,6 +331,44 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.btnCv{
+    text-align: center;
+}
+
+.btnCv a{
+    width: 140px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 12px;
+    color: white;
+    border-style: solid;
+    border-width: .2px;
+    border-color:white;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    margin-top: 60px;
+}
+
+.btnCv a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btnCv a:hover span{
+    width: 100%;
+}
+
+.btnCv a:hover{
+    color: black;
+}
 /* SERVICES SECTION */
 
 #sectionServices{
@@ -398,4 +436,136 @@ nav ul li a:hover::after{
 
 .link-arrow:hover i{
     transform: translate(5px, -5px );
+}
+
+/* CONTACT STYLES */
+
+#sectionContact{
+    padding: 100px 0;
+    width: 100%;
+}
+
+.containerContact{
+    width: 80%;
+    margin: auto;
+}
+
+.containerContact h1{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.columnContact{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.contactInfo{
+    flex-basis: 35%;
+}
+
+.contactInfo p{
+    margin-top: 25px;
+}
+
+.contactInfo p i{
+    color: rgb(212, 191, 70);
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.imgContact img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contactForm{
+    flex-basis: 60%;
+}
+
+.contactForm form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background-color: rgb(16, 16, 16);
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 8px 8px 8px rgb(33, 33, 33);
+}
+
+form input:focus, form textarea:focus{
+    background-color: rgb(29, 29, 29);
+}
+
+.btnForm{
+    text-align: center;
+}
+
+.btnForm a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 12px;
+    color: white;
+    border-style: solid;
+    border-width: .2px;
+    border-color:white;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+    margin-top: 30px;
+}
+
+.btnForm a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btnForm a:hover span{
+    width: 100%;
+}
+
+.btnForm a:hover{
+    color: black;
+}
+
+/* FOOTER STYLES */
+
+.imgFooter{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.imgFooter img{
+    width: 70%;
+}
+
+@media screen and (max-width: 770px){
+    .imgFooter img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2100px){
+    .imgFooter img{
+        width: 50%;
+    }
 }
