@@ -131,7 +131,6 @@ nav .fa-solid{
     position: absolute;
 }
 
-
 /* SECTION USER */
 
 .user{
@@ -227,6 +226,10 @@ nav .fa-solid{
     font-size: 30px;
 }
 
+.iconUser a{
+    color: white;
+}
+
 .iconUser i{
     margin-inline: 8px;
     cursor: pointer;
@@ -281,16 +284,82 @@ nav .fa-solid{
 @media screen and (max-width: 770px){
     .user{
         flex-basis: 100%;
+        width: 100vw;
+        margin: 0;
     }
 
     .userContent{
-        flex-basis: 80%;
-        text-align: center;
-        object-fit: fill;
+        padding: 0;
+        margin-top: -300px;
+        justify-content: center;
+        flex-basis: 100%;
+        display: flex;
+        align-items: center;
+        width: 100vw;
     }
 
-    .user img{
-        width: 100%;
+    .userContent img{
+        width: 80vw;
+        position: absolute;
+        z-index: 0;
+        transition: none;
+        box-shadow: none;
+        margin-left: 28px;
+    }
+
+    .user img:hover{
+        opacity: 1;
+    }
+
+    .userInfo{
+        margin-top: 850px;
+        justify-content: center;
+        margin-left: 45px;
+        padding: 0;
+        transform: none;
+        transition: none;
+    }
+
+    .userInfo h1{
+        font-size: 28px;
+    }
+
+    .lastName{
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .userInfo p{
+        font-size: 14px;
+    }
+
+    .btnUser{
+        text-align: center;
+    }
+
+    .iconUser{
+        text-align: center;
+    }
+
+    .hideInfo .userInfo{
+        transform: none;
+        opacity: 1;
+    }
+
+    .iconClose{
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .hideInfo .iconClose{
+        transform: none;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .hideInfo img{
+        transform: none;
+        box-shadow: none;
     }
 }
 
@@ -439,7 +508,6 @@ nav .fa-solid{
     .columnAbout{
         justify-content: center;
         flex-basis: 100%;
-        text-align: center;
     }
 
     .columnAbout p{
@@ -449,22 +517,20 @@ nav .fa-solid{
     .tittleAbout{
         font-size: 45px;
         margin-bottom: 50px;
-        text-align: center;
     }
 
-    .contTittle{
-        display: flex;
-        margin-left: 40px;
+    .contentLinks{
+        font-size: 16px;
+        margin-right: 25px;
     }
 
     .btnCv{
         margin-bottom: 55px;
     }
+
     .colAbout1{
         flex-basis: 100%;
         font-size: 15px;
-        padding-left: 25px;
-        padding-right: 25px;
     }
     .colAbout2{
         flex-basis: 80%;
@@ -544,6 +610,15 @@ nav .fa-solid{
     .contServices{
         flex-basis: 100%;
         font-size: 16px;
+    }
+
+    .contServices p{
+        font-size: 15px;
+    }
+
+    .tittleServices{
+        font-size: 30px;
+        margin-bottom: 50px;
     }
 }
 
@@ -631,8 +706,12 @@ nav .fa-solid{
 }
 
 @media screen and (max-width: 770px){
+    #sectionWorks{
+        padding-bottom: 0;
+    }
     #sectionWorks h1{
-        margin-bottom: 70px;
+        margin-bottom: 60px;
+        font-size: 45px;
     }
     .containerWorks{
         padding-top: 0;
@@ -641,9 +720,8 @@ nav .fa-solid{
         flex-basis: 100%;
         margin-bottom: 25px;
     }
-
     .imgInfo{
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -717,27 +795,30 @@ form input:focus, form textarea:focus{
     background-color: rgb(29, 29, 29);
 }
 
-.btnForm{
+form{
     text-align: center;
 }
 
-.btnForm a{
+form button{
     width: 150px;
     text-decoration: none;
     display: inline-block;
     padding: 12px 12px;
+    background-color: black;
     color: white;
     border-style: solid;
     border-width: .2px;
     border-color:white;
+    font-size: 15px;
     font-weight: 600;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
     margin-top: 30px;
+    cursor: pointer;
 }
 
-.btnForm a span{
+form button span{
     width: 0%;
     height: 100%;
     position: absolute;
@@ -748,21 +829,32 @@ form input:focus, form textarea:focus{
     transition: 0.5s;
 }
 
-.btnForm a:hover span{
+form button:hover span{
     width: 100%;
 }
 
-.btnForm a:hover{
+form button:hover{
     color: black;
 }
 
+#msgConfirm{
+    color: rgb(212, 191, 70);
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 770px){
+    .containerContact h1{
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
     .contactInfo{
         flex-basis: 100%;
         text-align: center;
         margin-bottom: 35px;
     }
-
     .contactForm{
         flex-basis: 100%;
     }

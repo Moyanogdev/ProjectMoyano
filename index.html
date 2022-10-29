@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -16,11 +17,11 @@
             <nav>
                 <img src="img/logoMoyanogdev.png" alt="" class="logoHeader">
                 <ul id="sideMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#userContent">Home</a></li>
+                    <li><a href="#sectionAbout">About</a></li>
+                    <li><a href="#sectionServices">Services</a></li>
+                    <li><a href="#sectionWorks">Works</a></li>
+                    <li><a href="#sectionContact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -38,16 +39,16 @@
                 <img src="img/imgUser.png" alt="" onclick="openContent()">
                 <div class="userInfo">
                     <h1>Gonzalo Federico</h1>
-                    <h1>Moyano</h1>
+                    <h1 class="lastName">Moyano</h1>
                     <p>Frontend Developer at <span>Kdos Inc.</span></p>
                     <p>From: Córdoba, Argentina.</p>
                     <div class="btnUser">
-                        <a href="#"><span></span>Connect with me</a>
+                        <a href="#sectionContact"><span></span>Connect with me</a>
                     </div>
                     <div class="iconUser">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-solid fa-envelope"></i>
-                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://github.com/Moyanogdev"><i class="fa-brands fa-github"></i></a>
+                        <a href="#sectionContact"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/gonzalofedericomoyano/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -132,7 +133,7 @@
                     <div class="imgInfo">
                         <h3>MONS BURGUERS</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta neque eligendi consequuntur saepe reprehenderit ad odio exercitationem.</p>
-                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        <a href="https://moyanogdev.github.io/ProyectMons"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <div class="contWorks">
@@ -140,7 +141,7 @@
                     <div class="imgInfo">
                         <h3>JANET KILIC ASLAN MAKEUP</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta neque eligendi consequuntur saepe reprehenderit ad odio exercitationem.</p>
-                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        <a href="https://moyanogdev.github.io/ProyectMakeup"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <div class="contWorks">
@@ -148,7 +149,7 @@
                     <div class="imgInfo">
                         <h3>HEISENBERG BARBERSHOP</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta neque eligendi consequuntur saepe reprehenderit ad odio exercitationem.</p>
-                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        <a href="https://moyanogdev.github.io/ProyectBarbershop"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -158,7 +159,7 @@
                     <div class="imgInfo">
                         <h3>MERMAID NAIL STUDIO</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta neque eligendi consequuntur saepe reprehenderit ad odio exercitationem.</p>
-                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        <a href="https://moyanogdev.github.io/ProyectMermaid"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <div class="contWorks">
@@ -166,7 +167,7 @@
                     <div class="imgInfo">
                         <h3>MOYA MATES</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta neque eligendi consequuntur saepe reprehenderit ad odio exercitationem.</p>
-                        <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        <a href="https://moyanogdev.github.io/ProyectMatesJS"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                     </div>
                 </div>
                 <div class="contWorks">
@@ -186,20 +187,19 @@
                 <div class="columnContact">
                     <div class="contactInfo">
                         <p><i class="fa-solid fa-paper-plane"></i>gmoyanodvlpr@gmail.com</p>
-                        <p><i class="fa-solid fa-phone"></i>54 351 2416034</p>
+                        <p><i class="fa-solid fa-phone"></i>+54 351 2416034</p>
                         <div class="imgContact">
                             <img src="img/contactSpaceship.png" alt="">
                         </div>
                     </div>
                     <div class="contactForm">
-                        <form>
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="message" rows="10" placeholder="Your Message"></textarea>
+                        <form name="submit-to-google-sheet">
+                            <input name="Name" type="text" placeholder="Name" required>
+                            <input name="Email" type="email" placeholder="Email" required>
+                            <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
+                            <button type="submit"><span></span>Send Message</button>
                         </form>
-                        <div class="btnForm">
-                            <a href="#"><span></span>Send Message</a>
-                        </div>
+                        <span id="msgConfirm"></span>
                     </div>
                 </div>
             </div>

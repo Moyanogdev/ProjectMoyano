@@ -50,3 +50,29 @@ function openCont(contname){
     event.currentTarget.classList.add("active-link");
     document.getElementById(contname).classList.add("active-cont");
 }
+
+// SMOOTH SCROLL
+
+let scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+// CONTACT FORM 
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSrrMHBw45Ncb10N8p_-EMczKfAghzxY6tzebTz4MxFa9ZkmSp1mNU3h4sw4HqXKWKEg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msgConfirm = document.getElementById("msgConfirm")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msgConfirm.innerHTML = "Message sent succesfully"
+        setTimeout(function(){
+            msgConfirm.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
