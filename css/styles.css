@@ -68,6 +68,7 @@ nav .fa-solid{
     left: 30px;
 }
 
+/* Header Media Queries */
 @media only screen and (max-width: 770px){
     nav .fa-solid{
         display: block;
@@ -281,6 +282,7 @@ nav .fa-solid{
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
 }
 
+/* User Section Media Queries */
 @media screen and (max-width: 770px){
     .user{
         flex-basis: 100%;
@@ -504,6 +506,7 @@ nav .fa-solid{
     color: black;
 }
 
+/* About Section Media Queries */
 @media screen and (max-width: 770px){
     .columnAbout{
         justify-content: center;
@@ -606,6 +609,7 @@ nav .fa-solid{
     transform: translate(5px, -5px );
 }
 
+/* Services Section Media Queries */
 @media screen and (max-width: 770px){
     .contServices{
         flex-basis: 100%;
@@ -705,6 +709,7 @@ nav .fa-solid{
     height: 100%;
 }
 
+/* Works Section Media Queries */
 @media screen and (max-width: 770px){
     #sectionWorks{
         padding-bottom: 0;
@@ -845,6 +850,7 @@ form button:hover{
     font-weight: 600;
 }
 
+/* Contact Section Media Queries */
 @media screen and (max-width: 770px){
     .containerContact h1{
         font-size: 45px;
@@ -871,12 +877,12 @@ form button:hover{
     width: 70%;
 }
 
+/* Footer Media Queries */
 @media screen and (max-width: 770px){
     .imgFooter img{
         width: 100%;
     }
 }
-
 @media screen and (min-width: 1441px) and (max-width: 2100px){
     .imgFooter img{
         width: 50%;
