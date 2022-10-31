@@ -76,3 +76,32 @@ let scroll = new SmoothScroll('a[href*="#"]', {
       })
       .catch(error => console.error('Error!', error.message))
   })
+
+  // SCROLL UP EFECTS
+
+    const scrollUp = () => {
+        const scrollUp = document.getElementById('scrollUp')
+        this.scrollY >= 1500 ? scrollUp.classList.add('showScroll')
+                            : scrollUp.classList.remove('showScroll')
+    }
+    
+    window.addEventListener('scroll', scrollUp);
+
+    // SCROLL REVEAL EFECTS
+
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 2500,
+        delay: 250,
+    });
+
+
+    sr.reveal(`.colAbout1`, {origin: 'left'})
+    sr.reveal(`.colAbout2`, {origin: 'right'})
+    sr.reveal(`.tittleServices`, {delay:150})
+    sr.reveal(`.containerServices`, {origin: 'left'})
+    sr.reveal(`.sectionWorks`, {interval:100})
+    sr.reveal(`.tittleContact`, {delay:150})
+    sr.reveal(`.imgContact`, {origin: 'left'})
+    sr.reveal(`.contactForm`, {origin: 'right'})

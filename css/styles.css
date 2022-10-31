@@ -15,6 +15,10 @@ body{
     color: white;
 }
 
+main{
+    overflow: hidden;
+}
+
 /* HEADER STYLES */
 
 .header{
@@ -69,7 +73,7 @@ nav .fa-solid{
 }
 
 /* Header Media Queries */
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 992px){
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -536,8 +540,17 @@ nav .fa-solid{
         font-size: 15px;
     }
     .colAbout2{
-        flex-basis: 80%;
+        flex-basis: 70%;
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1200px){
+    .colAbout1{
+        flex-basis: 60%;
+    }
+    .colAbout2{
+        flex-basis: 30%;
     }
 }
 /* SERVICES SECTION */
@@ -623,6 +636,20 @@ nav .fa-solid{
     .tittleServices{
         font-size: 30px;
         margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1200px){
+    #sectionServices{
+        justify-content: center;
+        text-align: center;
+    }
+    .contServices{
+        flex-basis: 90%;
+    }
+
+    .tittleServices{
+        text-align: center;
     }
 }
 
@@ -868,6 +895,25 @@ form button:hover{
 
 /* FOOTER STYLES */
 
+.scrollUp{
+    position: fixed;
+    right: 25px;
+    bottom: -50%;
+    color: white;
+    transition: .4s ease-in;
+    font-size: 25px;
+    z-index: 5;
+}
+
+.scrollUp:hover{
+    transform: translateY(-10px);
+    color: rgb(212, 191, 70);
+}
+
+.showScroll{
+    bottom: 25px;
+}
+
 .imgFooter{
     margin-top: 80px;
     text-align: center;
@@ -881,6 +927,21 @@ form button:hover{
 @media screen and (max-width: 770px){
     .imgFooter img{
         width: 100%;
+    }
+
+    .scrollUp{
+        right: 15px;
+        bottom: -50%;
+        font-size: 20px;
+    }
+
+    .scrollUp:focus{
+        transform: translateY(-5px);
+        color: rgb(212, 191, 70);
+    }
+
+    .showScroll{
+        bottom: 30px;
     }
 }
 @media screen and (min-width: 1441px) and (max-width: 2100px){
