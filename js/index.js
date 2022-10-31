@@ -58,6 +58,24 @@ let scroll = new SmoothScroll('a[href*="#"]', {
 	speedAsDuration: true
 });
 
+// SERVICES MODAL SECTION (INCOMPLETE)
+
+const openModal = document.querySelector('.openModal');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.modalClose')
+
+
+openModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.add('modalShow')
+})
+
+
+closeModal.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.remove('modalShow')
+})
+
 // CONTACT FORM 
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwSrrMHBw45Ncb10N8p_-EMczKfAghzxY6tzebTz4MxFa9ZkmSp1mNU3h4sw4HqXKWKEg/exec'
