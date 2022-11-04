@@ -139,7 +139,7 @@ nav .fa-solid{
 /* SECTION USER */
 
 .user{
-    margin: 50px auto;
+    margin: 50px;
 }
 
 .userContent{
@@ -235,17 +235,14 @@ nav .fa-solid{
 @media screen and (max-width: 770px){
     .user{
         flex-basis: 100%;
-        width: 100vw;
         margin: 0;
         justify-content: center;
     }
 
     .userContent{
-        padding: 0;
         justify-content: center;
         flex-basis: 90%;
         display: flex;
-        align-items: center;
     }
 
     .userImg{
@@ -256,7 +253,8 @@ nav .fa-solid{
     .userInfo{
         text-align: center;
         margin-top: 35px;
-        flex-basis: 90%;
+        margin-left: 0;
+        flex-basis: 100%;
         justify-content: center;
     }
 
