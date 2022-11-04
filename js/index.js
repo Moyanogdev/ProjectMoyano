@@ -23,18 +23,6 @@ function closemenu(){
     sideMenu.style.right = "-180px";
 }
 
-// USER SECTION EFECTS
-
-let userContent = document.getElementById("userContent");
-
-function openContent(){
-    userContent.classList.remove("hideInfo");
-}
-
-function closeContent(){
-    userContent.classList.add("hideInfo");
-}
-
 // ABOUT SECTION EFECTS
 
 let contentLinks = document.getElementsByClassName("contentLinks");
@@ -114,7 +102,8 @@ closeModal.addEventListener('click', (e) => {
         delay: 250,
     });
 
-
+    sr.reveal(`.userImg`, {origin: 'left'})
+    sr.reveal(`.userInfo`, {origin: 'right'})
     sr.reveal(`.colAbout1`, {origin: 'left'})
     sr.reveal(`.colAbout2`, {origin: 'right'})
     sr.reveal(`.tittleServices`, {delay:150})

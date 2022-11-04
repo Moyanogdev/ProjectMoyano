@@ -139,41 +139,27 @@ nav .fa-solid{
 /* SECTION USER */
 
 .user{
-    width: fit-content;
     margin: 50px auto;
-    display: flex;
-    flex-basis: 80%;
 }
 
 .userContent{
-    width: fit-content;
-    margin: 50px auto;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-.user img{
-    width: 500px;
-    cursor: pointer;
-    border-style: solid;
-    border-color: rgb(33, 33, 33);
-    border-width: 1px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 100;
-    box-shadow: 8px 8px 8px rgb(33, 33, 33);
-    transition: transform 1s, box-shadow 1s;
+.userImg{
+    flex-basis: 30%;
 }
 
-.user img:hover{
-    opacity: 0.8;
+.userImg img{
+    width: 100%;
 }
 
 .userInfo{
-    padding: 10px 50px;
-    transform: translateX(0px);
-    opacity: 1;
-    transition: transform 1s, opacity 1s;
+    flex-basis: 40%;
+    margin-left: 45px;
 }
 
 .userInfo h1{
@@ -245,85 +231,33 @@ nav .fa-solid{
     color: rgb(212, 191, 70);
 }
 
-.iconClose{
-    width: 80px;
-    cursor: pointer;
-    position: relative;
-    transition: transform 1s;
-}
-
-.iconClose::before, .iconClose::after{
-    content: '';
-    height: 5%;
-    width: 10px;
-    background-color: rgb(212, 191, 70);
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    margin-left: -1px;
-}
-
-.iconClose::before{
-    transform: rotate(50deg);
-}
-
-.iconClose::after{
-    transform: rotate(-45deg);
-}
-
-.hideInfo .userInfo{
-    transform: translateX(45px);
-    opacity: 0;
-}
-
-.hideInfo .iconClose{
-    transform: translateX(-410px);
-    opacity: 0;
-}
-
-.hideInfo img{
-    transform: translateX(410px);
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
-}
-
 /* User Section Media Queries */
 @media screen and (max-width: 770px){
     .user{
         flex-basis: 100%;
         width: 100vw;
         margin: 0;
+        justify-content: center;
     }
 
     .userContent{
         padding: 0;
-        margin-top: -300px;
         justify-content: center;
-        flex-basis: 100%;
+        flex-basis: 90%;
         display: flex;
         align-items: center;
-        width: 100vw;
     }
 
-    .userContent img{
-        width: 80vw;
-        position: absolute;
-        z-index: 0;
-        transition: none;
-        box-shadow: none;
-        margin-left: 28px;
-    }
-
-    .user img:hover{
-        opacity: 1;
+    .userImg{
+        margin-top: 25px;
+        flex-basis: 60%;
     }
 
     .userInfo{
-        margin-top: 850px;
+        text-align: center;
+        margin-top: 35px;
+        flex-basis: 90%;
         justify-content: center;
-        margin-left: 45px;
-        padding: 0;
-        transform: none;
-        transition: none;
     }
 
     .userInfo h1{
@@ -347,25 +281,24 @@ nav .fa-solid{
         text-align: center;
     }
 
-    .hideInfo .userInfo{
-        transform: none;
-        opacity: 1;
+}
+
+@media screen and (min-width: 771px) and (max-width: 1200px){
+    .userImg{
+        flex-basis: 35%;
+    }
+    .userInfo{
+        flex-basis: 30%;
+        margin-left: 25px;
     }
 
-    .iconClose{
-        opacity: 0;
-        overflow: hidden;
+    .userInfo h1{
+        font-size: 35px;
     }
 
-    .hideInfo .iconClose{
-        transform: none;
-        opacity: 0;
-        overflow: hidden;
-    }
-
-    .hideInfo img{
-        transform: none;
-        box-shadow: none;
+    .userInfo p{
+        margin-top: 10px;
+        font-size: 15px;
     }
 }
 
