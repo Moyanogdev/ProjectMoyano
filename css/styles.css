@@ -73,7 +73,7 @@ nav .fa-solid{
 }
 
 /* Header Media Queries */
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 1200px){
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -84,8 +84,8 @@ nav .fa-solid{
         color: white;
         position: fixed;
         top: 0;
-        right: -180px;
-        width: 180px;
+        right: -200px;
+        width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
@@ -94,7 +94,7 @@ nav .fa-solid{
 
     nav ul li{
         display: block;
-        margin: 30px;
+        margin: 40px;
     }
 
     nav ul li a{
@@ -484,6 +484,140 @@ nav .fa-solid{
         flex-basis: 30%;
     }
 }
+
+/* SKILLS SECTION */
+
+#sectionSkills{
+    padding: 75px 0;
+    width: 100%;
+}
+
+#sectionSkills h1{
+    font-size: 65px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.containerSkills{
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.contSkills{
+    flex-basis: 100%;
+    margin: 35px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.skillBar{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skillBar span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(212, 191, 70);
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 15px;
+}
+
+.skillBar .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skillBar .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css{
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skillBar .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
+
+.skillBar .bootstrap{
+    width: 0%;
+    animation: 2s bootstrap forwards;
+}
+@keyframes bootstrap{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skillBar .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+@keyframes react{
+    0%{width: 0%;}
+    100%{width: 35%;}
+}
+
+.progressBar{
+    background-color: rgb(212, 191, 70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+@media screen and (max-width: 770px){
+    #sectionSkills h1{
+        font-size: 45px;
+    }
+
+    .skill h3{
+        font-size: 20px;
+    }
+
+    .skillBar{
+        height: 5px;
+    }
+
+    .skillBar span{
+        height: 30px;
+        width: 30px;
+        top: -10px;
+        right: -15px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
 /* SERVICES SECTION */
 
 #sectionServices{

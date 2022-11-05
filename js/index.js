@@ -20,7 +20,7 @@ function openmenu(){
 }
 
 function closemenu(){
-    sideMenu.style.right = "-180px";
+    sideMenu.style.right = "-200px";
 }
 
 // ABOUT SECTION EFECTS
@@ -37,6 +37,26 @@ function openCont(contname){
     }
     event.currentTarget.classList.add("active-link");
     document.getElementById(contname).classList.add("active-cont");
+}
+
+
+// SKILLS EFECTS
+
+function skillsEfects(){
+    let skills = document.getElementById("sectionSkills");
+    let skillsBar = window.innerHeight - skills.getBoundingClientRect().top;
+    if(skillsBar >= 300){
+        let skill = document.getElementsByClassName("progressBar");
+        skill[0].classList.add("html");
+        skill[1].classList.add("css");
+        skill[2].classList.add("javascript");
+        skill[3].classList.add("bootstrap");
+        skill[4].classList.add("react");
+    }
+}
+
+window.onscroll = function(){
+    skillsEfects();
 }
 
 // SMOOTH SCROLL
@@ -106,6 +126,7 @@ closeModal.addEventListener('click', (e) => {
     sr.reveal(`.userInfo`, {origin: 'right'})
     sr.reveal(`.colAbout1`, {origin: 'left'})
     sr.reveal(`.colAbout2`, {origin: 'right'})
+    sr.reveal(`#sectionSkills`)
     sr.reveal(`.tittleServices`, {delay:150})
     sr.reveal(`.containerServices`, {origin: 'left'})
     sr.reveal(`.sectionWorks`, {interval:100})
