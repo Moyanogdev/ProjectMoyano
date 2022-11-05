@@ -49,9 +49,10 @@ function skillsEfects(){
         let skill = document.getElementsByClassName("progressBar");
         skill[0].classList.add("html");
         skill[1].classList.add("css");
-        skill[2].classList.add("javascript");
+        skill[2].classList.add("sass");
         skill[3].classList.add("bootstrap");
-        skill[4].classList.add("react");
+        skill[4].classList.add("javascript");
+        skill[5].classList.add("react");
     }
 }
 

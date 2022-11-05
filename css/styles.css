@@ -46,6 +46,7 @@ nav ul li a{
     color: white;
     text-decoration: none;
     font-size: 15px;
+    font-weight: 600;
     position: relative;
 }
 
@@ -521,6 +522,10 @@ nav .fa-solid{
     font-size: 20px;
 }
 
+.skill i{
+    margin-right: 12px;
+}
+
 .skillBar{
     height: 8px;
     width: 100%;
@@ -560,11 +565,11 @@ nav .fa-solid{
     100%{width: 60%;}
 }
 
-.skillBar .javascript{
+.skillBar .sass{
     width: 0%;
-    animation: 2s javascript forwards;
+    animation: 2s sass forwards;
 }
-@keyframes javascript{
+@keyframes sass{
     0%{width: 0%;}
     100%{width: 45%;}
 }
@@ -576,6 +581,15 @@ nav .fa-solid{
 @keyframes bootstrap{
     0%{width: 0%;}
     100%{width: 80%;}
+}
+
+.skillBar .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 45%;}
 }
 
 .skillBar .react{
@@ -615,6 +629,10 @@ nav .fa-solid{
         right: -15px;
         font-size: 13px;
         line-height: 30px;
+    }
+
+    .progressBar{
+        height: 5px;
     }
 }
 
