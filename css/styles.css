@@ -172,6 +172,18 @@ nav .fa-solid{
     line-height: 26px;
 }
 
+.userInfo a{
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(212, 191, 70);
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.userInfo a:hover{
+    color: rgb(216, 184, 0);
+}
+
 .btnUser a{
     width: 180px;
     text-decoration: none;
@@ -205,12 +217,6 @@ nav .fa-solid{
 
 .btnUser a:hover{
     color: black;
-}
-
-.userInfo span{
-    font-weight: 600;
-    color: rgb(212, 191, 70);
-    cursor: pointer;
 }
 
 .iconUser{
@@ -325,6 +331,22 @@ nav .fa-solid{
 
 .colAbout1 p{
     color: rgb(218, 218, 218);
+}
+
+.colAboutlink{
+    margin-top: 15px;
+}
+
+.colAboutlink a{
+    color: rgb(212, 191, 70);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .4s ease-in-out;
+    text-align: center;
+}
+
+.colAboutlink a:hover{
+    color: rgb(216, 184, 0);
 }
 
 .tittleAbout{
@@ -589,7 +611,7 @@ nav .fa-solid{
 }
 @keyframes javascript{
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 40%;}
 }
 
 .skillBar .react{
@@ -598,7 +620,7 @@ nav .fa-solid{
 }
 @keyframes react{
     0%{width: 0%;}
-    100%{width: 35%;}
+    100%{width: 30%;}
 }
 
 .progressBar{
