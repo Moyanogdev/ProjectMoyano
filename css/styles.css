@@ -944,6 +944,33 @@ nav .fa-solid{
     }
 }
 
+@media screen and (min-width: 771px) and (max-width: 1200px){
+    .imgInfo h3{
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .imgInfo p{
+        font-size: 8px;
+    }
+
+    .imgInfo a{
+        margin-top: 8px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px){
+    .imgInfo h3{
+        font-size: 17px;
+    }
+
+    .imgInfo p{
+        font-size: 12px;
+    }
+
+}
+
 /* CONTACT STYLES */
 
 #sectionContact{
