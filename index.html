@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('y2fX3XPYh9LNGoqcA') </script>
     <link rel="icon" href="img/favIcongm.png">
     <link rel="stylesheet" href="css/styles.css">
     <title>Moyanogdev</title>
@@ -276,11 +278,11 @@
                         </div>
                     </div>
                     <div class="contactForm">
-                        <form name="submit-to-google-sheet">
-                            <input name="Name" type="text" placeholder="Name" required>
-                            <input name="Email" type="email" placeholder="Email" required>
-                            <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
-                            <button type="submit"><span></span>Send Message</button>
+                        <form id="form">
+                            <input name="from_name" type="text" placeholder="Name" id="from_name" required>
+                            <input name="email" type="email" placeholder="Email" id="email" required>
+                            <textarea name="message" type="text" rows="10" placeholder="Your Message" id="message" required></textarea>
+                            <button type="submit" id="button"><span></span>Send Message</button>
                         </form>
                         <span id="msgConfirm"></span>
                     </div>

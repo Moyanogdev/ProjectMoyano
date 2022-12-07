@@ -87,22 +87,30 @@ closeModal.addEventListener('click', (e) => {
 
 // CONTACT FORM 
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSrrMHBw45Ncb10N8p_-EMczKfAghzxY6tzebTz4MxFa9ZkmSp1mNU3h4sw4HqXKWKEg/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msgConfirm = document.getElementById("msgConfirm")
+    const btn = document.getElementById('button');
+    const msgConfirm = document.getElementById("msgConfirm");
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msgConfirm.innerHTML = "Message sent succesfully"
-        setTimeout(function(){
-            msgConfirm.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+    document.getElementById('form')
+    .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.value = ' Sending... ';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_51an4h7';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            msgConfirm.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msgConfirm.innerHTML = ""
+            },5000)
+            form.reset()
+        }, (err) => {
+            btn.value = 'Send Message';
+            alert(JSON.stringify(err));
+            });
+    });
 
   // SCROLL UP EFECTS
 
