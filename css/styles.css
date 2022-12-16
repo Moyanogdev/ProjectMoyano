@@ -620,7 +620,7 @@ nav .fa-solid{
 }
 @keyframes react{
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 25%;}
 }
 
 .progressBar{
