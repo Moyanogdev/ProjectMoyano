@@ -67,23 +67,51 @@ let scroll = new SmoothScroll('a[href*="#"]', {
 	speedAsDuration: true
 });
 
-// SERVICES MODAL SECTION (INCOMPLETE)
+// SERVICES MODAL SECTION (I REPEAT CODE)
 
-const openModal = document.querySelector('.openModal');
-const modal = document.querySelector('.modal');
-const closeModal = document.querySelector('.modalClose')
+const openModal1 = document.querySelector('.openModal1');
+const openModal2 = document.querySelector('.openModal2');
+const openModal3 = document.querySelector('.openModal3');
+
+const modal1 = document.querySelector('.modal1');
+const modal2 = document.querySelector('.modal2');
+const modal3 = document.querySelector('.modal3');
+
+const closeModal1 = document.querySelector('.modalClose1');
+const closeModal2 = document.querySelector('.modalClose2');
+const closeModal3 = document.querySelector('.modalClose3');
 
 
-openModal.addEventListener('click', (e) => {
+openModal1.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.classList.add('modalShow')
+    modal1.classList.add('modalShow')
 })
 
-
-closeModal.addEventListener('click', (e) => {
+openModal2.addEventListener('click', (e) => {
     e.preventDefault();
-    modal.classList.remove('modalShow')
+    modal2.classList.add('modalShow')
 })
+
+openModal3.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal3.classList.add('modalShow')
+})
+
+closeModal1.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal1.classList.remove('modalShow')
+})
+
+closeModal2.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal2.classList.remove('modalShow')
+})
+
+closeModal3.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal3.classList.remove('modalShow')
+})
+
 
 // CONTACT FORM 
 
