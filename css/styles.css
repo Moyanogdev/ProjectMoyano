@@ -584,7 +584,7 @@ nav .fa-solid{
 }
 @keyframes css{
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 65%;}
 }
 
 .skillBar .sass{
@@ -620,7 +620,7 @@ nav .fa-solid{
 }
 @keyframes react{
     0%{width: 0%;}
-    100%{width: 25%;}
+    100%{width: 20%;}
 }
 
 .progressBar{
