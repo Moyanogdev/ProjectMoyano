@@ -1,23 +1,5 @@
-/* GENERAL STYLES*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Space mono;
-    scroll-behavior: smooth;
-}
-
-body{
-    min-height: 100vh;
-    overflow-x: hidden;
-    background: black;
-    color: white;
-}
-
-main{
-    overflow: hidden;
-}
+@import "var.scss";
+@import "general.scss";
 
 /* HEADER STYLES */
 
@@ -43,7 +25,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: white;
+    color: $fontColor;
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
@@ -54,7 +36,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 2px;
-    background: white;
+    background: $fontColor;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -81,8 +63,8 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: black;
-        color: white;
+        background: $BackColor;
+        color: $fontColor;
         position: fixed;
         top: 0;
         right: -200px;
@@ -99,7 +81,7 @@ nav .fa-solid{
     }
 
     nav ul li a{
-        color: white;
+        color: $fontColor;
         font-weight: 600;
     }
 
@@ -175,13 +157,13 @@ nav .fa-solid{
 .userInfo a{
     font-weight: 600;
     text-decoration: none;
-    color: rgb(212, 191, 70);
+    color: $secondaryColor;
     cursor: pointer;
     transition: .4s ease-in-out;
-}
 
-.userInfo a:hover{
-    color: rgb(216, 184, 0);
+    &:hover{
+        color: $hoverColor;
+    }
 }
 
 .btnUser a{
@@ -189,15 +171,23 @@ nav .fa-solid{
     text-decoration: none;
     display: inline-block;
     padding: 12px 12px;
-    color: white;
+    color: $fontColor;
     border-style: solid;
     border-width: .2px;
-    border-color:white;
+    border-color:$fontColor;
     font-weight: 600;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
     margin-top: 30px;
+
+    &:hover{
+        color: $BackColor;
+    }
+
+    &:hover span{
+        width: 100%;
+    }
 }
 
 .btnUser a span{
@@ -206,17 +196,9 @@ nav .fa-solid{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: $fontColor;
     z-index: -1;
     transition: 0.5s;
-}
-
-.btnUser a:hover span{
-    width: 100%;
-}
-
-.btnUser a:hover{
-    color: black;
 }
 
 .iconUser{
@@ -225,17 +207,17 @@ nav .fa-solid{
 }
 
 .iconUser a{
-    color: white;
+    color: $fontColor;
 }
 
 .iconUser i{
     margin-inline: 8px;
     cursor: pointer;
     transition: .4s ease-in-out;
-}
 
-.iconUser i:hover{
-    color: rgb(212, 191, 70);
+    &:hover{
+        color: $secondaryColor;
+    }
 }
 
 /* User Section Media Queries */
@@ -311,7 +293,7 @@ nav .fa-solid{
 
 #sectionAbout{
     padding: 100px 0;
-    color: whitesmoke;
+    color: $secondaryFontColor;
 }
 
 .containerAbout{
@@ -330,7 +312,7 @@ nav .fa-solid{
 }
 
 .colAbout1 p{
-    color: rgb(218, 218, 218);
+    color: $secondaryFontColor;
 }
 
 .colAboutlink{
@@ -338,20 +320,20 @@ nav .fa-solid{
 }
 
 .colAboutlink a{
-    color: rgb(212, 191, 70);
+    color: $secondaryColor;
     text-decoration: none;
     font-weight: 600;
     transition: .4s ease-in-out;
     text-align: center;
-}
 
-.colAboutlink a:hover{
-    color: rgb(216, 184, 0);
+    &:hover{
+        color: $hoverColor;
+    }
 }
 
 .tittleAbout{
     font-size: 60px;
-    color: whitesmoke;
+    color: $secondaryFontColor;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -375,14 +357,14 @@ nav .fa-solid{
 }
 
 .contTittle p{
-    color: white;
+    color: $fontColor;
 }
 
 .contTittle p::after{
     content: '';
     width: 0;
     height: 2px;
-    background: rgb(212, 191, 70);
+    background: $secondaryColor;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -412,7 +394,7 @@ nav .fa-solid{
 }
 
 .contContents ul li span{
-    color: rgb(212, 191, 70);
+    color: $secondaryColor;
     font-size: 14px;
     font-weight: 600;
 }
@@ -434,15 +416,23 @@ nav .fa-solid{
     text-decoration: none;
     display: inline-block;
     padding: 12px 12px;
-    color: white;
+    color: $fontColor;
     border-style: solid;
     border-width: .2px;
-    border-color:white;
+    border-color:$fontColor;
     font-weight: 600;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
     margin-top: 60px;
+
+    &:hover{
+        color: $BackColor;
+    }
+
+    &:hover span{
+        width: 100%;
+    }
 }
 
 .btnCv a span{
@@ -451,17 +441,9 @@ nav .fa-solid{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: $fontColor;
     z-index: -1;
     transition: 0.5s;
-}
-
-.btnCv a:hover span{
-    width: 100%;
-}
-
-.btnCv a:hover{
-    color: black;
 }
 
 /* About Section Media Queries */
@@ -560,7 +542,7 @@ nav .fa-solid{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: rgb(212, 191, 70);
+    background-color: $secondaryColor;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -624,7 +606,7 @@ nav .fa-solid{
 }
 
 .progressBar{
-    background-color: rgb(212, 191, 70);
+    background-color: $secondaryColor;
     position: absolute;
     top: 0;
     left: 0;
@@ -685,23 +667,23 @@ nav .fa-solid{
     margin-top: 35px;
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(16, 16, 16);
+    background-color: $boxBackground;
     padding: 25px;
     transition: background 0.5s, transform 0.5s;
+
+    &:hover{
+        background-color:$hoverBox;
+        transform: translateY(-10px);
+    }
 }
 
 .contServices h2{
     margin-bottom: 20px;
 }
 
-.contServices:hover{
-    background-color:rgb(29, 29, 29);
-    transform: translateY(-10px);
-}
-
 .iconServices{
     font-size: 25px;
-    color: rgb(212, 191, 70);
+    color: $secondaryColor;
 }
 
 .link-arrow{
@@ -711,20 +693,20 @@ nav .fa-solid{
     align-items: center;
     font-weight: 600;
     text-decoration: none;
-    color: white;
+    color: $fontColor;
+
+    &:hover{
+        color: $secondaryColor;
+    }
+
+    &:hover i{
+        transform: translate(5px, -5px );
+    }
 }
 
 .link-arrow i{
     transition: .4s ease-in-out;
     margin-left: 5px;
-}
-
-.link-arrow:hover{
-    color: rgb(212, 191, 70);
-}
-
-.link-arrow:hover i{
-    transform: translate(5px, -5px );
 }
 
 .modal1{
@@ -733,7 +715,7 @@ nav .fa-solid{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #111111bd;
+    background-color: $modalColor;
     display: flex;
     opacity: 0;
     pointer-events: none;
@@ -747,7 +729,7 @@ nav .fa-solid{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #111111bd;
+    background-color: $modalColor;
     display: flex;
     opacity: 0;
     pointer-events: none;
@@ -761,7 +743,7 @@ nav .fa-solid{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #111111bd;
+    background-color: $modalColor;
     display: flex;
     opacity: 0;
     pointer-events: none;
@@ -773,13 +755,13 @@ nav .fa-solid{
     width: 90%;
     max-width: 800px;
     max-height: 80%;
-    background-color: whitesmoke;
+    background-color: $secondaryFontColor;
     margin: auto;
     border-radius: 10px;
     padding: 25px 25px;
     justify-content: center;
     text-align: center;
-    color: rgb(29, 29, 29);
+    color: $hoverBox;
 }
 
 .tittleModal{
@@ -802,14 +784,22 @@ nav .fa-solid{
     text-decoration: none;
     display: inline-block;
     padding: 12px 12px;
-    color: rgb(29, 29, 29);
+    color: $hoverBox;
     border-style: solid;
     border-width: .2px;
-    border-color:rgb(29, 29, 29);
+    border-color: $hoverBox;
     font-weight: 600;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
+
+    &:hover{
+        color: $fontColor;
+    }
+
+    &:hover span{
+        width: 100%;
+    }
 }
 
 .modalBtn a span{
@@ -818,17 +808,9 @@ nav .fa-solid{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(29, 29, 29);
+    background-color: $hoverBox;
     z-index: -1;
     transition: 0.5s;
-}
-
-.modalBtn a:hover span{
-    width: 100%;
-}
-
-.modalBtn a:hover{
-    color: white;
 }
 
 .modalShow{
@@ -896,6 +878,10 @@ nav .fa-solid{
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+
+    &:hover .imgInfo{
+        height: 100%;
+    }
 }
 
 .contWorks img{
@@ -912,7 +898,7 @@ nav .fa-solid{
 .imgInfo{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.8), rgb(16, 16, 16));
+    background: linear-gradient(rgba(0,0,0,0.8), $boxBackground);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -935,20 +921,16 @@ nav .fa-solid{
 
 .imgInfo a{
     margin-top: 20px;
-    color: white;
+    color: $fontColor;
     text-decoration: none;
     font-size: 40px;
     text-align: center;
     transition: .7s ease-in-out;
-}
 
-.imgInfo:hover a{
-    color: rgb(212, 191, 70);
-    transform: scale(1.1);
-}
-
-.contWorks:hover .imgInfo{
-    height: 100%;
+    &:hover{
+        color: $secondaryColor;
+        transform: scale(1.1);
+    }
 }
 
 /* Works Section Media Queries */
@@ -1034,7 +1016,7 @@ nav .fa-solid{
 }
 
 .contactInfo p i{
-    color: rgb(212, 191, 70);
+    color: $secondaryColor;
     margin-right: 12px;
     font-size: 20px;
 }
@@ -1056,17 +1038,17 @@ form input, form textarea{
     width: 100%;
     outline: none;
     border: 0;
-    background-color: rgb(16, 16, 16);
+    background-color: $boxBackground;
     padding: 15px;
     margin: 15px 0;
     font-size: 15px;
     border-radius: 10px;
-    color: white;
+    color: $fontColor;
     box-shadow: 8px 8px 8px rgb(33, 33, 33);
-}
 
-form input:focus, form textarea:focus{
-    background-color: rgb(29, 29, 29);
+    &:focus{
+        background-color: $hoverBox;
+    }
 }
 
 form{
@@ -1078,11 +1060,11 @@ form button{
     text-decoration: none;
     display: inline-block;
     padding: 12px 12px;
-    background-color: black;
-    color: white;
+    background-color: $BackColor;
+    color: $fontColor;
     border-style: solid;
     border-width: .2px;
-    border-color:white;
+    border-color: $fontColor;
     font-size: 15px;
     font-weight: 600;
     position: relative;
@@ -1090,6 +1072,14 @@ form button{
     transition: color 0.5s;
     margin-top: 30px;
     cursor: pointer;
+
+    &:hover{
+        color: $BackColor;
+    }
+
+    &:hover span{
+        width: 100%;
+    }
 }
 
 form button span{
@@ -1098,21 +1088,13 @@ form button span{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: $fontColor;
     z-index: -1;
     transition: 0.5s;
 }
 
-form button:hover span{
-    width: 100%;
-}
-
-form button:hover{
-    color: black;
-}
-
 #msgConfirm{
-    color: rgb(212, 191, 70);
+    color: $secondaryColor;
     display: block;
     margin-top: 10px;
     text-align: center;
@@ -1141,15 +1123,15 @@ form button:hover{
     position: fixed;
     right: 25px;
     bottom: -50%;
-    color: white;
+    color: $fontColor;
     transition: .4s ease-in;
     font-size: 25px;
     z-index: 5;
-}
 
-.scrollUp:hover{
-    transform: translateY(-10px);
-    color: rgb(212, 191, 70);
+    &:hover{
+        transform: translateY(-10px);
+        color: $secondaryColor;
+    }
 }
 
 .showScroll{
@@ -1179,7 +1161,7 @@ form button:hover{
 
     .scrollUp:focus{
         transform: translateY(-5px);
-        color: rgb(212, 191, 70);
+        color: $secondaryColor;
     }
 
     .showScroll{
