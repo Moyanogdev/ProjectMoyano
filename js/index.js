@@ -113,7 +113,7 @@ closeModal3.addEventListener('click', (e) => {
 })
 
 
-// CONTACT FORM 
+// EMAIL JS 
 
     const btn = document.getElementById('button');
     const msgConfirm = document.getElementById("msgConfirm");
