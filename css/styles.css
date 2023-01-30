@@ -246,7 +246,10 @@ nav .fa-solid {
   align-items: center; }
 
 .colAbout1 {
-  flex-basis: 60%; }
+  flex-basis: 60%;
+  border-radius: 10px;
+  background-color: #101010;
+  padding: 55px; }
 
 .colAbout1 p {
   color: whitesmoke; }
@@ -374,7 +377,8 @@ nav .fa-solid {
     margin-bottom: 55px; }
   .colAbout1 {
     flex-basis: 100%;
-    font-size: 15px; }
+    font-size: 15px;
+    margin-bottom: 45px; }
   .colAbout2 {
     flex-basis: 70%;
     text-align: center; } }

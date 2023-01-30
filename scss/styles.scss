@@ -309,6 +309,9 @@ nav .fa-solid{
 
 .colAbout1{
     flex-basis: 60%;
+    border-radius: 10px;
+    background-color: $boxBackground;
+    padding: 55px;
 }
 
 .colAbout1 p{
@@ -474,6 +477,7 @@ nav .fa-solid{
     .colAbout1{
         flex-basis: 100%;
         font-size: 15px;
+        margin-bottom: 45px;
     }
     .colAbout2{
         flex-basis: 70%;
