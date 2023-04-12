@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!-- Font-awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="img/Favicon Moyanogdev.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="../img/Favicon Moyanogdev.png">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Moyanogdev</title>
 </head>
 <body>
@@ -20,21 +20,21 @@
     <header>
         <div class="header">
             <nav>
-                <img src="img/Logo Moyanogdev.png" alt="Moyanogdev Logo" class="logoHeader">
+                <img src="../img/Logo Moyanogdev.png" alt="Moyanogdev Logo" class="logoHeader">
                 <ul id="sideMenu">
                     <li><a href="#userContent">Home</a></li>
-                    <li><a href="#sectionAbout">About</a></li>
-                    <li><a href="#sectionSkills">Skills</a></li>
-                    <li><a href="#sectionServices">Services</a></li>
-                    <li><a href="#sectionWorks">Works</a></li>
-                    <li><a href="#sectionContact">Contact</a></li>
+                    <li><a href="#sectionAbout">Sobre Mi</a></li>
+                    <li><a href="#sectionSkills">Habilidades</a></li>
+                    <li><a href="#sectionServices">Servicios</a></li>
+                    <li><a href="#sectionWorks">Trabajos</a></li>
+                    <li><a href="#sectionContact">Contacto</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="language">
                 <span>En</span>
-                <input type="checkbox" class="check">
+                <input type="checkbox" class="check" checked>
                 <span>Es</span>
             </div>
         </div>
@@ -43,24 +43,24 @@
 
         <!-- Home Section -->
         <section id="sectionHome">
-            <img src="img/PlanetaEstrellas.png" alt="Planet and Stars" id="planetStars">
-            <img src="img/humanPlanet.png" alt="Human" id="human">
+            <img src="../img/PlanetaEstrellas.png" alt="Planet and Stars" id="planetStars">
+            <img src="../img/humanPlanet.png" alt="Human" id="human">
         </section>
     
         <!-- User section -->
         <section class="user" id="userContent">
             <div class="userContent">
                 <div class="userImg">
-                    <img src="img/imgUser.png" alt="User image">
+                    <img src="../img/imgUser.png" alt="User image">
                 </div>
                 <div class="userInfo">
                     <h1>Gonzalo Federico</h1>
                     <h1 class="lastName">Moyano</h1>
                     <p>Freelance <a href="#sectionAbout">Frontend Developer</a></p>
-                    <p>Frontend Developer at <a href="#sectionAbout">Etna Education</a></p>
-                    <p>From: Córdoba, Argentina.</p>
+                    <p>Frontend Developer en <a href="#sectionAbout">Etna Educación</a></p>
+                    <p>De: Córdoba, Argentina.</p>
                     <div class="btnUser">
-                        <a href="#sectionContact"><span></span>Connect with me</a>
+                        <a href="#sectionContact"><span></span>Contactarme   ↓</a>
                     </div>
                     <div class="iconUser">
                         <a href="https://github.com/Moyanogdev"><i class="fa-brands fa-github"></i></a>
@@ -76,44 +76,44 @@
             <div class="containerAbout">
                 <div class="columnAbout">
                     <div class="colAbout1">
-                        <h1 class="tittleAbout">About Me</h1>
-                        <p>I'm a Front-End Developer located in Argentina. I am dedicated to the design and development of Websites and Web Applications using cutting-edge technologies. I really enjoy creating and making things look good.</p>
-                        <p>Fan of music, video games, the outdoors activities and Design. Interested in the entire frontend spectrum and working on challenging projects in contact with the great people.</p>
+                        <h1 class="tittleAbout">Sobre Mi</h1>
+                        <p>Soy un Desarrollador Frontend actualmente ubicado en Argentina. Me dedico al diseño y desarrollo de sitios web y Aplicaciones Web utilizando eficientes tecnologías. Disfruto creando y haciendo que las cosas se vean bien. </p>
+                        <p>Fan de la música, video juegos, actividades al aire libre y diseño. Estoy interesado en todo el espectro frontend y en trabajar en proyectos desafiantes en conjunto con grandes personas.</p>
                         <div class="colAboutlink">
-                            <a href="#sectionContact">Let's make something special</a>
+                            <a href="#sectionContact">Hagamos algo especial!</a>
                         </div>
                         <div class="contTittle">
-                            <p class="contentLinks active-link" onclick="openCont('skills')">Services</p>
-                            <p class="contentLinks" onclick="openCont('experience')">Experience</p>
-                            <p class="contentLinks" onclick="openCont('education')">Education</p>
+                            <p class="contentLinks active-link" onclick="openCont('skills')">Servicios</p>
+                            <p class="contentLinks" onclick="openCont('experience')">Experiencia</p>
+                            <p class="contentLinks" onclick="openCont('education')">Educación</p>
                         </div>
                         <div class="contContents active-cont" id="skills">
                             <ul>
-                                <li><span>Web/App Desing</span><br>Design and development of web interfaces. Personalization and attention to detail.</li>
-                                <li><span>Support</span><br>Maintenance of websites and web applications.</li>
-                                <li><span>Web/App Development</span><br>Development of scalable web applications using React Js. Development of custom projects.</li>
+                                <li><span>Diseño Web/App</span><br>Diseño y Desarrollo de interfaces Web. Atención y personalización al detalle.</li>
+                                <li><span>Soporte Web/App</span><br>Mantenimiento de sitios web y Aplicaciones.</li>
+                                <li><span>Desarrollo Web/App</span><br>Desarrollo de Aplicaciones Web escalables usando React Js. Desarrollo de proyectos personalizados.</li>
                             </ul>
                         </div>
                         <div class="contContents" id="experience">
                             <ul>
-                                <li><span>Etna Educación</span><br>Working on Frontend projects of the startup. Maintenance and updating of Etna application. Work on the startup website. </li>
-                                <li><span>Freelance Projects</span><br>Developing custom projects for businesses and individuals.</li>
-                                <li><span>Coderhouse</span><br>Developing projects applying the concepts learned in the courses.</li>
+                                <li><span>Etna Educación</span><br>Trabajando en proyectos del área de Frontend en la startup. Mantenimiento y actualización de la Aplicación Etna. Trabajos en el sitio web de Etna. </li>
+                                <li><span>Proyectos Freelance</span><br>Desarrollo de proyectos personalizados tanto para Empresas o Independientes.</li>
+                                <li><span>Coderhouse</span><br>Desarrollo de proyectos aplicando conocimientos de los cursos.</li>
                             </ul>
                         </div>
                         <div class="contContents" id="education">
                             <ul>
-                                <li><span>Coderhouse</span><br>Web Development, JavaScript and React Js (12/01/22 - 27/10/22).<br>Applications Development - React Native (21/12/22 - Present).</li>
-                                <li><span>UTN B.A. e-learning</span><br>Web Development in Bootstrap (28/04/22 - 31/05/22).</li>
-                                <li><span>Universidad Siglo XXI</span><br>SEO - Seach Engine Optimization (10/05/22 - Present).</li>
+                                <li><span>Coderhouse</span><br>Carrera de Desarrollo Frontend React Js. (12/01/22 - 27/10/22).<br>Desarrollo de Aplicaciones - React Native (21/12/22 - Presente).</li>
+                                <li><span>UTN B.A. e-learning</span><br>Desarrollo Web en Bootstrap (28/04/22 - 31/05/22).</li>
+                                <li><span>Universidad Siglo XXI</span><br>SEO - Certificado en Posicionamiento de Buscadores (10/05/22 - Presente).</li>
                             </ul>
                         </div>
                         <div class="btnCv">
-                            <a href="img/CvMoyanogdevEN.pdf" download><span></span>Download CV</a>
+                            <a href="../img/CVMoyanogdevES.pdf" download><span></span>Descarga CV</a>
                         </div>
                     </div>
                     <div class="colAbout2">
-                        <img src="img/astroDev.png" alt="About Me image" class="logoAbout">
+                        <img src="../img/astroDev.png" alt="About Me image" class="logoAbout">
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
 
         <!-- Skills Section -->
         <section id="sectionSkills">
-            <h1>Skills</h1>
+            <h1>Habilidades</h1>
             <div class="containerSkills">
                 <div class="contSkills">
                     <div class="skill">
@@ -179,7 +179,7 @@
         <!-- Services Section -->
         <section id="sectionServices">
             <div class="tittleServices">
-                <h1>Services</h1>
+                <h1>Servicios</h1>
             </div>
             <div class="containerServices">
                 <div class="contServices">
@@ -239,10 +239,10 @@
 
         <!-- Works Section -->
         <section id="sectionWorks" class="sectionWorks">
-            <h1>My Works</h1>
+            <h1>Mis Trabajos</h1>
             <div class="containerWorks">
                 <div class="contWorks">
-                    <img src="img/work1.png" alt="Mons Burguers image">
+                    <img src="../img/work1.png" alt="Mons Burguers image">
                     <div class="imgInfo">
                         <h3>MONS BURGUERS</h3>
                         <p>Local burger website. It has three sections and was developed using HTML, CSS, Bootstrap and JavaScript.</p>
@@ -250,7 +250,7 @@
                     </div>
                 </div>
                 <div class="contWorks">
-                    <img src="img/work2.png" alt="Janet Kilic Makeup image">
+                    <img src="../img/work2.png" alt="Janet Kilic Makeup image">
                     <div class="imgInfo">
                         <h3>JANET KILIC MAKEUP</h3>
                         <p>Professional makeup artist website. It has five sections and was developed using HTML, CSS, Sass, Bootstrap, and JavaScript.</p>
@@ -258,7 +258,7 @@
                     </div>
                 </div>
                 <div class="contWorks">
-                    <img src="img/work3.png" alt="Heisenberg Barbershop image">
+                    <img src="../img/work3.png" alt="Heisenberg Barbershop image">
                     <div class="imgInfo">
                         <h3>HEISENBERG BARBERSHOP</h3>
                         <p>Custom Barbershop website. One page site using HTML, CSS and JavaScript. Modern and sophisticated style.</p>
@@ -268,7 +268,7 @@
             </div>
             <div class="containerWorks">
                 <div class="contWorks">
-                    <img src="img/work4.png" alt="Memaid Nail Studio image">
+                    <img src="../img/work4.png" alt="Memaid Nail Studio image">
                     <div class="imgInfo">
                         <h3>MERMAID NAIL STUDIO</h3>
                         <p>Nail Studio website. One page site using HTML, CSS, Bootstrap and JavaScript. Requested by professional Nail artist.</p>
@@ -276,7 +276,7 @@
                     </div>
                 </div>
                 <div class="contWorks">
-                    <img src="img/work5.png" alt="Moya Mates image">
+                    <img src="../img/work5.png" alt="Moya Mates image">
                     <div class="imgInfo">
                         <h3>MOYA MATES</h3>
                         <p>E-commerce project at Coderhouse. Two section website using HTML, CSS, Bootstrap and JavaScript. Basic logic of e-commerce.</p>
@@ -284,7 +284,7 @@
                     </div>
                 </div>
                 <div class="contWorks">
-                    <img src="img/work6.png" alt="Hardfire Gaming-shop image">
+                    <img src="../img/work6.png" alt="Hardfire Gaming-shop image">
                     <div class="imgInfo">
                         <h3>HARDFIRE GAMING SHOP</h3>
                         <p>E-commerce project at Coderhouse. Final project using React Js and others technologies. Gaming hardware store.</p>
@@ -297,21 +297,21 @@
         <!-- Contact Section -->
         <section id="sectionContact">
             <div class="containerContact">
-                <h1 class="tittleContact">Contact Me</h1>
+                <h1 class="tittleContact">Contacto</h1>
                 <div class="columnContact">
                     <div class="contactInfo">
                         <p><i class="fa-solid fa-paper-plane"></i>gmoyanodvlpr@gmail.com</p>
                         <p><i class="fa-solid fa-phone"></i>+54 351 2416034</p>
                         <div class="imgContact">
-                            <img src="img/contactSpaceship.png" alt="Contact Section image">
+                            <img src="../img/contactSpaceship.png" alt="Contact Section image">
                         </div>
                     </div>
                     <div class="contactForm">
                         <form id="form">
-                            <input name="from_name" type="text" placeholder="Name" id="from_name" required>
+                            <input name="from_name" type="text" placeholder="Nombre" id="from_name" required>
                             <input name="email" type="email" placeholder="Email" id="email" required>
-                            <textarea name="message" type="text" rows="10" placeholder="Your Message" id="message" required></textarea>
-                            <button type="submit" id="button"><span></span>Send Message</button>
+                            <textarea name="message" type="text" rows="10" placeholder="Tu Mensaje" id="message" required></textarea>
+                            <button type="submit" id="button"><span></span>Enviar Msj</button>
                         </form>
                         <span id="msgConfirm"></span>
                     </div>
@@ -325,18 +325,18 @@
     <footer>
         <a href="#" class="scrollUp" id="scrollUp"><i class="fa-solid fa-circle-up"></i></a>
         <div class="imgFooter">
-            <img src="img/imgFooter.png" alt="Footer Section image">
+            <img src="../img/imgFooter.png" alt="Footer Section image">
         </div>
     </footer>
 
     <!-- Scroll Reveal JS-->
-    <script src="js/scrollreveal.min.js"></script>
+    <script src="../js/scrollreveal.min.js"></script>
     <!-- Smooth Scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <!-- Email Js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript"> emailjs.init('y2fX3XPYh9LNGoqcA') </script>
     <!-- JavaScript -->
-    <script src="js/index.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
