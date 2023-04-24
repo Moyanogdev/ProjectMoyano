@@ -664,7 +664,7 @@ nav .fa-solid{
 }
 @keyframes sass{
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 55%;}
 }
 
 .skillBar .bootstrap{
@@ -690,6 +690,24 @@ nav .fa-solid{
     animation: 2s react forwards;
 }
 @keyframes react{
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.skillBar .git{
+    width: 0%;
+    animation: 2s git forwards;
+}
+@keyframes git{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skillBar .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+@keyframes sql{
     0%{width: 0%;}
     100%{width: 20%;}
 }

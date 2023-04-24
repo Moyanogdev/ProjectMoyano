@@ -67,6 +67,8 @@ function skillsEfects(){
         skill[3].classList.add("bootstrap");
         skill[4].classList.add("javascript");
         skill[5].classList.add("react");
+        skill[6].classList.add("git");
+        skill[7].classList.add("sql");
     }
 }
 
