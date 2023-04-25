@@ -1,3 +1,9 @@
+// LOADER EFECTS
+
+window.addEventListener("load", function(){
+    document.getElementById("loader").classList.toggle("loader2")
+})
+
 // HOME EFECTS
 
 let planet_stars = document.getElementById('planetStars');
