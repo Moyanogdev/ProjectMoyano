@@ -694,6 +694,19 @@ nav .fa-solid {
     background-color: #1d1d1d;
     transform: translateY(-10px); }
 
+.containerImgServices {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.contImgServices {
+  flex-basis: 40%;
+  margin-top: 50px; }
+
+.contImgServices img {
+  width: 100%; }
+
 .contServices h2 {
   margin-bottom: 20px; }
 
@@ -798,7 +811,12 @@ nav .fa-solid {
     font-size: 15px; }
   .tittleServices {
     font-size: 30px;
-    margin-bottom: 50px; } }
+    margin-bottom: 50px; }
+  .containerImgServices {
+    margin-top: 10px; }
+  .contImgServices {
+    margin-top: 10px;
+    flex-basis: 85%; } }
 
 @media screen and (min-width: 771px) and (max-width: 1200px) {
   #sectionServices {

@@ -188,6 +188,7 @@ closeModal3.addEventListener('click', (e) => {
     sr.reveal(`#sectionSkills`)
     sr.reveal(`.tittleServices`, {delay:150})
     sr.reveal(`.containerServices`, {origin: 'left'})
+    sr.reveal(`.containerImgServices`, {origin: 'right'})
     sr.reveal(`.sectionWorks`, {interval:100})
     sr.reveal(`.tittleContact`, {delay:150})
     sr.reveal(`.imgContact`, {origin: 'left'})

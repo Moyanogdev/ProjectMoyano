@@ -848,6 +848,21 @@ nav .fa-solid{
     }
 }
 
+.containerImgServices{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contImgServices{
+    flex-basis: 40%;
+    margin-top: 50px;
+}
+
+.contImgServices img{
+    width: 100%;
+}
+
 .contServices h2{
     margin-bottom: 20px;
 }
@@ -984,6 +999,15 @@ nav .fa-solid{
     .tittleServices{
         font-size: 30px;
         margin-bottom: 50px;
+    }
+
+    .containerImgServices{
+        margin-top: 10px;
+    }
+
+    .contImgServices{
+        margin-top: 10px;
+        flex-basis: 85%;
     }
 }
 
