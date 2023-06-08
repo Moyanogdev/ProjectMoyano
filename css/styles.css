@@ -896,6 +896,10 @@ nav .fa-solid {
     color: #d4bf46;
     transform: scale(1.1); }
 
+.worksLink {
+  margin-top: 50px;
+  text-align: center; }
+
 /* Works Section Media Queries */
 @media screen and (max-width: 770px) {
   #sectionWorks {
@@ -909,7 +913,9 @@ nav .fa-solid {
     flex-basis: 100%;
     margin-bottom: 25px; }
   .imgInfo {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .worksLink {
+    margin-top: 10px; } }
 
 @media screen and (min-width: 771px) and (max-width: 1200px) {
   .imgInfo h3 {

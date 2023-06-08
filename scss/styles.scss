@@ -1108,6 +1108,11 @@ nav .fa-solid{
     }
 }
 
+.worksLink{
+    margin-top: 50px;
+    text-align: center;
+}
+
 /* Works Section Media Queries */
 @media screen and (max-width: 770px){
     #sectionWorks{
@@ -1126,6 +1131,9 @@ nav .fa-solid{
     }
     .imgInfo{
         font-size: 15px;
+    }
+    .worksLink{
+        margin-top: 10px;
     }
 }
 
